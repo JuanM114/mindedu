@@ -1,3 +1,5 @@
+Instrucciones para descargar y ejecutar el proyecto:
+
 1.	Ingresar al repositorio de GitHub y seleccionar la opción Code y despues Download ZIP.
 2.	Extraer el archivo descargado y copiar la carpeta del proyecto dentro del directorio htdocs de XAMPP.
 3.	Abrir el panel de control de XAMPP e iniciar los servicios Apache y MySQL.
