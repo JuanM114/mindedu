@@ -1,0 +1,577 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f5f6f3;
+    color:#314740;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+
+    width:260px;
+
+    background:#fafaf8;
+
+    border-right:1px solid #e3e7e2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:30px 20px;
+}
+
+.sidebar h2{
+
+    font-size:2rem;
+
+    margin-bottom:50px;
+
+    color:#2f4b43;
+}
+
+.sidebar ul{
+
+    list-style:none;
+}
+
+.sidebar li{
+
+    margin-bottom:10px;
+}
+
+.sidebar a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#617069;
+
+    padding:14px 16px;
+
+    border-radius:16px;
+
+    transition:.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+
+    background:#dbe7df;
+
+    color:#2f6a55;
+
+    font-weight:600;
+}
+
+.support{
+
+    margin-top:auto;
+
+    background:#ece5f4;
+
+    padding:20px;
+
+    border-radius:22px;
+}
+
+.support p{
+
+    line-height:1.7;
+
+    color:#55635d;
+}
+
+.user{
+
+    margin-top:20px;
+
+    padding-top:20px;
+
+    border-top:1px solid #ddd;
+}
+
+.user strong{
+
+    color:#2f4b43;
+}
+
+.user small{
+
+    color:#7a817d;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main{
+
+    flex:1;
+
+    padding:0;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar{
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    border-bottom:1px solid #e1e3df;
+
+    background:#f7f8f5;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    padding:35px 40px;
+}
+
+.section-label{
+
+    display:block;
+
+    font-size:12px;
+
+    color:#5f7b70;
+
+    margin-bottom:10px;
+
+    text-transform:uppercase;
+}
+
+.hero h1{
+
+    font-size:3rem;
+
+    color:#2f4b43;
+
+    margin-bottom:12px;
+}
+
+.hero p{
+
+    color:#71807a;
+
+    font-size:1.1rem;
+}
+
+/* =========================
+   GRID PRINCIPAL
+========================= */
+
+.settings-layout{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:24px;
+
+    padding:0 40px 40px;
+}
+
+/* =========================
+   COLUMNAS
+========================= */
+
+.settings-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.settings-card{
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:30px;
+
+    box-shadow:
+    0 2px 8px rgba(0,0,0,.03);
+}
+
+.settings-card h2{
+
+    font-size:1.8rem;
+
+    color:#2f4b43;
+
+    margin-bottom:14px;
+}
+
+.settings-card p{
+
+    color:#6f7c76;
+
+    line-height:1.7;
+}
+
+/* =========================
+   ALTURAS
+========================= */
+
+.settings-column:first-child .settings-card:first-child{
+
+    min-height:220px;
+}
+
+.settings-column:first-child .settings-card:last-child{
+
+    min-height:420px;
+}
+
+.accessibility-card{
+
+    min-height:450px;
+}
+
+.privacy-card{
+
+    background:#eef4ee;
+
+    min-height:260px;
+}
+
+/* =========================
+   SELECT
+========================= */
+
+select{
+
+    width:100%;
+
+    margin-top:15px;
+
+    height:55px;
+
+    border:1px solid #d8dfd8;
+
+    border-radius:15px;
+
+    padding:0 15px;
+
+    font-size:15px;
+
+    background:white;
+}
+
+/* =========================
+   CHECKBOX RECORDATORIO
+========================= */
+
+input[type="time"]{
+
+    margin-top:15px;
+
+    height:50px;
+
+    width:220px;
+
+    border:1px solid #d8dfd8;
+
+    border-radius:14px;
+
+    padding:10px 15px;
+}
+
+/* =========================
+   ACCESIBILIDAD
+========================= */
+
+.option-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding:20px 0;
+
+    border-bottom:1px solid #eef1ee;
+}
+
+.option-row:last-child{
+
+    border:none;
+}
+
+.option-row strong{
+
+    display:block;
+
+    color:#2f4b43;
+
+    margin-bottom:8px;
+}
+
+.option-row p{
+
+    font-size:14px;
+
+    color:#7b827d;
+}
+
+/* =========================
+   SWITCH
+========================= */
+
+.option-row input[type="checkbox"]{
+
+    appearance:none;
+
+    width:55px;
+
+    height:30px;
+
+    background:#d7dbd7;
+
+    border-radius:40px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.option-row input[type="checkbox"]::after{
+
+    content:"";
+
+    width:22px;
+
+    height:22px;
+
+    background:white;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    top:4px;
+
+    left:4px;
+
+    transition:.3s;
+}
+
+.option-row input[type="checkbox"]:checked{
+
+    background:#35604f;
+}
+
+.option-row input[type="checkbox"]:checked::after{
+
+    transform:translateX(25px);
+}
+
+/* =========================
+   PREVIEW BOX
+========================= */
+
+.preview-box{
+
+    margin-top:25px;
+
+    background:#f3f5f2;
+
+    padding:20px;
+
+    border-radius:18px;
+}
+
+.preview-box small{
+
+    display:block;
+
+    color:#7a837d;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+}
+
+.preview-box p{
+
+    font-size:1.5rem;
+
+    color:#2f4b43;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.settings-card a{
+
+    text-decoration:none;
+
+    color:#35604f;
+
+    font-weight:600;
+}
+
+/* =========================
+   GUARDAR
+========================= */
+
+.save-btn{
+
+    width:260px;
+
+    height:55px;
+
+    display:block;
+
+    margin:25px auto 0;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#35604f;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.save-btn:hover{
+
+    background:#29483d;
+}
+
+/* =========================
+   MENSAJE ÉXITO
+========================= */
+
+.success-message{
+
+    margin:20px 40px;
+
+    background:#e8f2eb;
+
+    color:#35604f;
+
+    padding:16px 20px;
+
+    border-radius:18px;
+
+    font-weight:600;
+}
+
+/* =========================
+   ACCESIBILIDAD
+========================= */
+
+body.big-text{
+    font-size:18px;
+}
+
+body.high-contrast{
+    background:#000;
+    color:#fff;
+}
+
+body.reduce-motion *{
+    animation:none !important;
+    transition:none !important;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+    .settings-layout{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        width:220px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .topbar{
+        padding:20px;
+    }
+
+    .hero{
+        padding:25px;
+    }
+
+    .settings-layout{
+        padding:0 25px 25px;
+    }
+
+}

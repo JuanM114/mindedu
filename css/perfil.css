@@ -1,0 +1,410 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f6f3;
+    color:#29453d;
+}
+
+.main{
+    padding:30px 40px;
+}
+
+.profile-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+    margin-top:30px;
+}
+
+.left-column,
+.right-column{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.profile-card,
+.interests-card,
+.accessibility,
+.privacy,
+.delete-account{
+    background:#fff;
+    border-radius:24px;
+    padding:25px;
+}
+/* ==========================
+   SIDEBAR
+========================== */
+
+sbody{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f6f3;
+    color:#29453d;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:260px;
+    min-width:260px;
+    background:#eef2ed;
+    border-right:1px solid #dde2db;
+
+    display:flex;
+    flex-direction:column;
+
+    padding:25px;
+}
+
+.sidebar nav ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar nav a{
+    display:block;
+    padding:14px 16px;
+    text-decoration:none;
+    color:#56665f;
+    border-radius:15px;
+}
+
+.sidebar a.active{
+    background:#dce8df;
+    color:#2f6b57;
+    font-weight:600;
+}
+
+.support{
+    margin-top:auto;
+}
+
+.user{
+    margin-top:20px;
+    border-top:1px solid #d9d9d9;
+    padding-top:20px;
+}
+
+.main{
+    flex:1;
+    padding:30px 40px;
+}
+
+/* =================== */
+/* PERFIL */
+/* =================== */
+
+.profile-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:30px;
+}
+
+.profile-info{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.avatar{
+    width:64px;
+    height:64px;
+
+    border-radius:50%;
+
+    background:#ede3d7;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+}
+
+.profile-info h2{
+    margin:0;
+}
+
+.profile-info p{
+    color:#757575;
+    margin-top:5px;
+}
+
+.profile-badge{
+    background:#dce8df;
+    color:#2f6b57;
+    padding:10px 18px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+/* =================== */
+/* FORMULARIO */
+/* =================== */
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #d8ded8;
+
+    border-radius:14px;
+
+    margin-bottom:20px;
+
+    font-size:15px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:2fr 120px;
+    gap:15px;
+}
+
+/* =================== */
+/* INTERESES */
+/* =================== */
+
+.checkbox-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:20px;
+}
+
+.checkbox-group label{
+    background:#f2f4f0;
+
+    padding:10px 18px;
+
+    border-radius:20px;
+
+    border:1px solid #e1e1e1;
+}
+
+/* =================== */
+/* BOTONES */
+/* =================== */
+
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.save-btn{
+    background:#295c4a;
+    color:white;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:15px;
+}
+
+.cancel-btn{
+    background:white;
+
+    border:1px solid #d4d4d4;
+
+    padding:14px 30px;
+
+    border-radius:15px;
+}
+.space-btn{
+    border:none;
+
+    background:#dde9df;
+
+    color:#285446;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    font-weight:600;
+}
+
+/* =================== */
+/* ACCESIBILIDAD */
+/* =================== */
+
+.accessibility label{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin:20px 0;
+}
+
+/* =================== */
+/* PRIVACIDAD */
+/* =================== */
+
+.privacy{
+    background:#dfe8e2;
+}
+
+.privacy a{
+    text-decoration:none;
+    color:#2f6b57;
+    font-weight:bold;
+}
+
+/* =================== */
+/* ELIMINAR */
+/* =================== */
+
+.delete-btn{
+    width:100%;
+
+    background:white;
+
+    color:#c94747;
+
+    border:1px solid #c94747;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    margin-top:20px;
+}
+
+/* =================== */
+/* RESPONSIVE */
+/* =================== */
+
+@media(max-width:1100px){
+
+    .profile-layout{
+        grid-template-columns:1fr;
+    }
+
+
+}
+/* ==================================
+   CHAT IA
+================================== */
+
+.chat-btn{
+    position:fixed;
+
+    right:30px;
+    bottom:25px;
+
+    background:#194f3c;
+
+    color:white;
+
+    border:none;
+
+    border-radius:40px;
+
+    padding:18px 35px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+
+/* ===================================
+   TEXTO MÁS GRANDE
+=================================== */
+
+body.big-text{
+
+    font-size:18px;
+}
+
+body.big-text h1{
+    font-size:3rem;
+}
+
+body.big-text h2{
+    font-size:2rem;
+}
+
+body.big-text p,
+body.big-text label,
+body.big-text a,
+body.big-text button,
+body.big-text input{
+    font-size:1.1rem;
+}
+
+/* ===================================
+   ALTO CONTRASTE
+=================================== */
+
+body.high-contrast{
+
+    background:#000;
+    color:#fff;
+}
+
+body.high-contrast .sidebar,
+body.high-contrast .profile-card,
+body.high-contrast .interests-card,
+body.high-contrast .accessibility,
+body.high-contrast .privacy,
+body.high-contrast .delete-account{
+
+    background:#111 !important;
+
+    color:#fff !important;
+
+    border:2px solid #fff;
+}
+
+body.high-contrast input{
+
+    background:#000;
+
+    color:#fff;
+
+    border:1px solid #fff;
+}
+
+body.high-contrast a{
+
+    color:#ffff00;
+}
+
+body.high-contrast button{
+
+    border:1px solid #fff;
+}
+
+/* ===================================
+   REDUCIR MOVIMIENTO
+=================================== */
+
+body.reduce-motion *{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
+}
